@@ -8,9 +8,9 @@ class OauthClientsSeeder extends AbstractSeed
     {
         $data = array(
             array(
-                'id'    => 'japantravel',
-                'secret' => 'qwertyuiop1234567890',
-                'name' => 'JapanTravel',
+                'id'    => 'jt_qa',
+                'secret' => 'qa1234567890',
+                'name' => 'JapanTravel Questions',
             ),
         );
 

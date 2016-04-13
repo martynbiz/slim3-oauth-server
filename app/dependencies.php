@@ -39,9 +39,8 @@ $container['authorization_server'] = function ($c) {
     $server->setAuthCodeStorage(new \App\OAuth2\Storage\AuthCodeStorage());
 
     // add a couple of grants for this server
-    $server->addGrantType( new \App\OAuth2\Grant\AuthCodeGrant() );
     $server->addGrantType( new \App\OAuth2\Grant\RefreshTokenGrant() );
-    // $server->addGrantType( new \App\OAuth2\Grant\ClientCredentialsGrant() );
+    $server->addGrantType( new \App\OAuth2\Grant\ClientCredentialsGrant() );
 
     return $server;
 };

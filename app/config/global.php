@@ -4,6 +4,14 @@
 $settings = [
     'settings' => [
 
+        'eloquent' => [
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'charset' => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix' => '',
+        ],
+
         // Monolog settings
         'logger' => [
             'name' => 'slim-app',
